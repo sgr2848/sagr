@@ -3,7 +3,7 @@
   position: relative;
   /* top:12%; */
   left: 92%;
- 
+
   right: 100%;
   border-radius: 10%;
 }
@@ -22,7 +22,7 @@
   animation-duration: 8s;
   animation-fill-mode: both;
   gap: 30px;
-    z-index: 3000;
+  z-index: 3000;
   animation-timing-function: ease-in-out;
 }
 @keyframes listin {
@@ -36,45 +36,36 @@
   }
 }
 .draw_border {
-background-color: salmon;
-  box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
-	-6px -6px 12px 0 rgba(255, 255, 255, 0.5);
-	  -moz-box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
-	-6px -6px 12px 0 rgba(255, 255, 255, 0.5);
-	  -ms-box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
-	-6px -6px 12px 0 rgba(255, 255, 255, 0.5);
-	-webkit-box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
-    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
-  /* transition: color 0.25s 0.0833333333s; */
+  background-color: salmon;
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+  -moz-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+  -ms-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+  -webkit-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
   align-items: center;
   position: relative;
-  /* border-radius: 5%; */
-  padding: 1.3rem;
+  /* padding: 2.3rem; */
   overflow: hidden;
-}
-.draw_border::before,
-.draw-border::after {
-  border: 0 solid transparent;
-  box-sizing: border-box;
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: 0;
-  right: 0;
+  border-radius:10px;
+  z-index: 3000;
 }
 
 .draw_border:hover {
-  /* color: aqua; */
-    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-	inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
- 	-moz-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
-	inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  -ms-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 
 .draw_border {
-  display:flex;
+  display: flex;
   cursor: pointer;
   height: 20px;
   line-height: 1.5;
@@ -82,9 +73,7 @@ background-color: salmon;
   padding: 1.3em;
   letter-spacing: 0.05rem;
 }
-.btn:focus {
-  outline: 2px dotted red;
-}
+
 .picture {
   height: 95vh;
   width: 95vw;
