@@ -1,0 +1,74 @@
+.main {
+  background: linear-gradient(180deg, black, white);
+  border-radius: 10%;
+  /* padding: 0px; */
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: 100px 300px;
+  grid-gap: 2px;
+}
+.body {
+  /* margin:20px; */
+  padding: 0;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.item .indivImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.item .indivImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: 50% 50%; */
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  left: 0;
+}
+.item:hover .indivImage img {
+  border-radius: 0%;
+  transform: scale(1.5);
+  overflow: visible;
+}
+.fullScreen {
+  top: 0;
+  padding: 10px 10px 10px 10px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  position: absolute;
+}
+.fullScreen img {
+  top: 10px;
+  left: 20px;
+  z-index: 200000;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: inherit;
+  object-fit: contain;
+}
+.imgbg {
+  background: black;
+  opacity: 70%;
+  width: inherit;
+  top: inherit;
+  left: inherit;
+  height: inherit;
+  position: absolute;
+  z-index: 100;
+}
+.button {
+    position:absolute;
+  z-index: 200000;
+  border-radius: 10%;
+  cursor: pointer;
+}

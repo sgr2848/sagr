@@ -1,0 +1,102 @@
+.closeButton {
+  z-index: 3000;
+  position: relative;
+  /* top:12%; */
+  left: 92%;
+  opacity: 80%;
+  right: 100%;
+  border-radius: 10%;
+}
+.mainList {
+  top: 50%;
+  position: relative;
+  background-color: salmon;
+  display: grid;
+  padding: 10px;
+  height: 30px;
+  width: auto;
+  text-align: center;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 10px;
+  animation-name: listin;
+  animation-duration: 8s;
+  animation-fill-mode: both;
+  gap: 30px;
+  animation-timing-function: ease-in-out;
+}
+@keyframes listin {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-8px);
+  }
+
+  100% {
+    opacity: 50%;
+  }
+}
+.draw_border {
+background-color: salmon;
+  box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
+  /* transition: color 0.25s 0.0833333333s; */
+  align-items: center;
+  position: relative;
+  border-radius: 5%;
+  padding: 1.3rem;
+  overflow: hidden;
+}
+.draw_border::before,
+.draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.draw_border:hover {
+  /* color: aqua; */
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);}
+
+.draw_border {
+  display:flex;
+  cursor: pointer;
+  height: 20px;
+  line-height: 1.5;
+  font: 700 1.2rem "Inconsolata", sans-serif;
+  padding: 1.3em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted red;
+}
+.picture {
+  height: 95vh;
+  width: 95vw;
+}
+.Picture {
+  max-width: 100vw;
+  max-height: 100vh;
+  top: -135%;
+  left: 2%;
+  position: absolute;
+  z-index: 50000;
+}
+.musicPop {
+  /* opacity:80%; */
+  left: 65vw;
+  top: 20%;
+  width: 320px;
+
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+  border-top-left-radius: 10%;
+  position: sticky;
+  z-index: 10000000;
+  /* background: linear-gradient(2deg,  black,black,white,white); */
+}

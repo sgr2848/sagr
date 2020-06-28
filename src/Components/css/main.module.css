@@ -1,0 +1,96 @@
+.info{
+  height: inherit;
+  width:inherit;
+}
+.title {
+  top: 5vh;
+  float: center;
+  padding-left: 20%;
+  position: relative;
+  font-family: "Tangerine", serif;
+  font-size: 15vh;
+  z-index: 1000;
+  animation: flicker 0.1s infinite alternate;
+  margin-top: 0;
+  height: 15vh;
+  overflow: hidden;
+}
+.para {
+  top: 1vh;
+  padding-left: 20%;
+  position: relative;
+  font-family: "Inconsolata", serif;
+  font-size: 3vh;
+  color: black;
+  opacity: 20;
+  z-index: 1000;
+  margin: 0 auto;
+  border-right: 0.15em solid black;
+  overflow: hidden;
+  animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+}
+.list {
+  position:relative;
+  list-style: none;
+  margin-top: 0;
+  animation: introchange 15s infinite;
+}
+.newpara {
+  top: 2vh;
+  padding-left: 20%;
+  position: relative;
+  font-family: "Inconsolata", serif;
+  font-size: 3vh;
+  color: black;
+  opacity: 20;
+  z-index: 1000;
+  margin: 0 auto;
+  border-right: 0.15em solid black;
+  overflow: hidden;
+  animation: typing 10.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+}
+.wrapper{
+  /* padding-left:0%; */
+  position:relative;
+  /* opacity:; */
+  /* flex: content; */
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes flicker {
+  from {
+    text-shadow: 0px 0 0#black, -2px 0 0 white;
+  }
+  to {
+    text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+  }
+}
+@keyframes introchange {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -35%, 0);
+  }
+  83.3%,95.96%{transform:translate3d(0,-68%,0);}
+}
