@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import classes from "./css/main.module.css";
-import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Blogs from "./blogs";
 import Player from "./songPlayer";
 import Draggable from "react-draggable";
@@ -47,7 +46,7 @@ class Info extends Component {
         <div className={classes.wrapper}>
           <div>
             <div className={oasis.mainList}>
-              <Router>
+              
                 <button className={oasis.draw_border}>Projects</button>
 
                 <button
@@ -73,14 +72,12 @@ class Info extends Component {
                 </button>
 
                 <button className={oasis.draw_border}>
-                  <Link to="/blogs">Writings & Blogs</Link>
+                  Writings & Blogs
                 </button>
-                <Switch>
-                  <Route path="/blogs">
-                    <Blogs />
-                  </Route>
-                </Switch>
-              </Router>
+
+ 
+                 
+
             </div>
             <div className={oasis.Picture}>
               {isPicture ? (

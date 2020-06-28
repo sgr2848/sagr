@@ -22,7 +22,7 @@
   animation-name: listin;
   animation-duration: 8s;
   animation-fill-mode: both;
-  gap: 30px;
+  gap: 40px;
   z-index: 3000;
   animation-timing-function: ease-in-out;
 }
@@ -33,19 +33,19 @@
   }
 
   100% {
-    opacity: 50%;
+    opacity: 100%;
   }
 }
 .draw_border {
 		background-color: inherit;
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
-    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+    -2px -2px 16px 0 rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
-    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+    -2px -2px 16px 0 rgba(255, 255, 255, 0.2);
   -ms-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
-    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+    -2px -2px 16px 0 rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
-    -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
+    -2px -2px 16px 0 rgba(255, 255, 255, 0.2);
   align-items: center;
   position: relative;
   /* padding: 2.3rem; */
