@@ -3,7 +3,7 @@
   width: inherit;
 }
 .title {
-  top: 5vh;
+  top: 1vh;
   float: center;
   padding-left: 20%;
   position: relative;
@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 .para {
-  top: 1vh;
+  top:0.5vh;
   padding-left: 20%;
   position: relative;
   font-family: "Inconsolata", serif;
@@ -36,7 +36,7 @@
   animation: introchange 15s infinite;
 }
 .newpara {
-  top: 2vh;
+  top: 0.5vh;
   padding-left: 20%;
   position: relative;
   font-family: "Inconsolata", serif;
@@ -51,10 +51,7 @@
   white-space: nowrap;
 }
 .wrapper {
-  /* padding-left:0%; */
   position: relative;
-  /* opacity:; */
-  /* flex: content; */
 }
 @keyframes typing {
   from {
