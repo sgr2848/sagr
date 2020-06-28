@@ -19,23 +19,11 @@
   text-align: center;
   grid-template-columns: auto auto auto auto;
   margin-top: 10px;
-  animation-name: listin;
-  animation-duration: 8s;
-  animation-fill-mode: both;
   gap: 40px;
   z-index: 3000;
-  animation-timing-function: ease-in-out;
-}
-@keyframes listin {
-  0% {
-    opacity: 0;
-    transform: scale(0.6) translateY(-8px);
-  }
 
-  100% {
-    opacity: 100%;
-  }
 }
+
 .draw_border {
 		background-color: inherit;
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
