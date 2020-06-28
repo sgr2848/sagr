@@ -76,7 +76,7 @@
   z-index: 50000;
 }
 .musicPop {
-  /* opacity:80%; */
+
   left: 65vw;
   top: 20%;
   width: 320px;
@@ -86,5 +86,4 @@
   border-top-left-radius: 10%;
   position: sticky;
   z-index: 10000000;
-  /* background: linear-gradient(2deg,  black,black,white,white); */
 }
