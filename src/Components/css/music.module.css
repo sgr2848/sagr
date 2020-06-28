@@ -4,11 +4,14 @@
   /* background: linear-gradient(2deg,  black,black,white,aqua); */
   border-radius: 10%;
   z-index: 100000;
-  opacity: 80%;
   padding: 5px 10px;
   box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
     -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
-}
+  -moz-box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  -ms-box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  }
 .trackList {
   list-style-type: none;
   width: 90%;

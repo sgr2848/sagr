@@ -1,6 +1,6 @@
-.info{
+.info {
   height: inherit;
-  width:inherit;
+  width: inherit;
 }
 .title {
   top: 5vh;
@@ -22,7 +22,6 @@
   font-family: "Inconsolata", serif;
   font-size: 3vh;
   color: black;
-  opacity: 20;
   z-index: 1000;
   margin: 0 auto;
   border-right: 0.15em solid black;
@@ -31,7 +30,7 @@
   white-space: nowrap;
 }
 .list {
-  position:relative;
+  position: relative;
   list-style: none;
   margin-top: 0;
   animation: introchange 15s infinite;
@@ -43,7 +42,7 @@
   font-family: "Inconsolata", serif;
   font-size: 3vh;
   color: black;
-  opacity: 20;
+
   z-index: 1000;
   margin: 0 auto;
   border-right: 0.15em solid black;
@@ -51,9 +50,9 @@
   animation: typing 10.5s steps(40, end), blink-caret 0.75s step-end infinite;
   white-space: nowrap;
 }
-.wrapper{
+.wrapper {
   /* padding-left:0%; */
-  position:relative;
+  position: relative;
   /* opacity:; */
   /* flex: content; */
 }
@@ -92,5 +91,8 @@
   45.98% {
     transform: translate3d(0, -35%, 0);
   }
-  83.3%,95.96%{transform:translate3d(0,-68%,0);}
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -68%, 0);
+  }
 }
