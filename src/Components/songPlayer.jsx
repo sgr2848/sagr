@@ -161,8 +161,6 @@ class Player extends React.Component {
               width: "inherit",
               margin: "auto",
               fontFamily: "Inconsolata",
-              // float:"left",
-              // fontSize: "4vh",
             }}
           >
             List

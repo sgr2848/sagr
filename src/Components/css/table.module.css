@@ -8,9 +8,10 @@
   border-radius: 10%;
 }
 .mainList {
+	background-color: inherit;
+	color:black;
   top: 50%;
   position: relative;
-  background-color: salmon;
   display: grid;
   padding: 10px;
   height: 30px;
@@ -36,7 +37,7 @@
   }
 }
 .draw_border {
-  background-color: salmon;
+		background-color: inherit;
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
     -2px -2px 16px 0 rgba(255, 255, 255, 1.0);
   -moz-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),

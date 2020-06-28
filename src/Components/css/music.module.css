@@ -1,7 +1,6 @@
 .mainDiv {
   height: auto;
   width: 320px;
-  /* background: linear-gradient(2deg,  black,black,white,aqua); */
   border-radius: 10%;
   z-index: 100000;
   padding: 5px 10px;
@@ -48,6 +47,7 @@
 }
 
 .buttons {
+  background-color:inherit;
   position: relative;
   border-radius: 5%;
   padding: 10px 10px;
@@ -56,9 +56,12 @@
 }
 .insideB {
   position: relative;
+  display:grid;
+  grid-template-columns:  auto auto auto auto;
+  gap:20px;
   border-radius: 5%;
   opacity: 80%;
-  padding-left: 25%;
+  /* padding-left: 25%; */
 }
 .timebar {
   font-family: "Inconsolata", serif;
@@ -66,59 +69,57 @@
   padding: 4px 10px;
 }
 .playButton {
+    background-color:inherit;
   z-index: 100000;
   border-radius: 10%;
 }
 .pauseButton {
+    background-color:inherit;
   z-index: 100000;
   border-radius: 10%;
+   box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
 }
 .prevButton {
+    background-color:inherit;
   z-index: 100000;
   border-radius: 10%;
+   box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
 }
 .stopButton {
+    background-color:inherit;
   z-index: 100000;
   border-radius: 10%;
+   box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
 }
 .nextButton {
+    background-color:inherit;
   z-index: 100000;
   border-radius: 10%;
+   box-shadow: 6px 6px 12px 0 rgba(0, 0, 0, 0.2),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.5);
 }
 .nextButton:hover {
-  z-index: 40000;
-  color: white;
-  background: linear-gradient(2deg, black, grey);
-  border-radius: 55%;
-  box-shadow: 2px black;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 .prevButton:hover {
-  z-index: 100000;
-  color: white;
-  background: linear-gradient(2deg, black, grey);
-  border-radius: 55%;
-  box-shadow: 2px black;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 .stopButton:hover {
-  z-index: 100000;
-  color: white;
-  background: linear-gradient(2deg, black, grey);
-  border-radius: 55%;
-  box-shadow: 2px black;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 .pauseButton:hover {
-  z-index: 100000;
-  color: white;
-  background: linear-gradient(2deg, black, grey);
-  border-radius: 55%;
-  box-shadow: 2px black;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 .playButton:hover {
-  z-index: 100000;
-  color: white;
-  background: linear-gradient(2deg, black, grey);
-  border-radius: 55%;
-  box-shadow: 2px black;
+  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+    inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
 }
 
 
