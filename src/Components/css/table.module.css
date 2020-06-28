@@ -41,7 +41,7 @@ background-color: salmon;
   /* transition: color 0.25s 0.0833333333s; */
   align-items: center;
   position: relative;
-  border-radius: 5%;
+  /* border-radius: 5%; */
   padding: 1.3rem;
   overflow: hidden;
 }
