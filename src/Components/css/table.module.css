@@ -76,14 +76,13 @@
   z-index: 50000;
 }
 .musicPop {
-
-  left: 65vw;
-  top: 20%;
+  position: absolute;
+  top:2px;
+  padding-left: 75%;
   width: 320px;
-
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
   border-top-left-radius: 10%;
-  position: sticky;
+
   z-index: 10000000;
 }

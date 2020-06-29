@@ -31,6 +31,25 @@ class Info extends Component {
         const isPicture = this.state.picturePreview;
     return (
       <div className={classes.info}>
+        <div className={oasis.musicPop}>
+          {isMusicPlay ? (
+            <Draggable>
+              <div>
+                <button
+                  className={oasis.closeButton}
+                  onClick={() => {
+                    this.setState({ musicThere: false });
+                  }}
+                >
+                  x
+                </button>
+                <Player />
+              </div>
+            </Draggable>
+          ) : (
+            <span></span>
+          )}
+        </div>
         <h1 className={classes.title}>
           <ul className={classes.list}>
             <li>Hello I'm Sagar</li>
@@ -46,38 +65,31 @@ class Info extends Component {
         <div className={classes.wrapper}>
           <div>
             <div className={oasis.mainList}>
-              
-                <button className={oasis.draw_border}>Projects</button>
+              <button className={oasis.draw_border}>Projects</button>
 
-                <button
-                  className={oasis.draw_border}
-                  onClick={() => {
-                    this.setState({
-                      musicThere: true,
-                    });
-                  }}
-                >
-                  Music And That Sort of Things
-                </button>
+              <button
+                className={oasis.draw_border}
+                onClick={() => {
+                  this.setState({
+                    musicThere: true,
+                  });
+                }}
+              >
+                Music And That Sort of Things
+              </button>
 
-                <button
-                  className={oasis.draw_border}
-                  onClick={() => {
-                    this.setState({
-                      picturePreview: true,
-                    });
-                  }}
-                >
-                  Pictures I took
-                </button>
+              <button
+                className={oasis.draw_border}
+                onClick={() => {
+                  this.setState({
+                    picturePreview: true,
+                  });
+                }}
+              >
+                Pictures I took
+              </button>
 
-                <button className={oasis.draw_border}>
-                  Writings & Blogs
-                </button>
-
- 
-                 
-
+              <button className={oasis.draw_border}>Writings & Blogs</button>
             </div>
             <div className={oasis.Picture}>
               {isPicture ? (
@@ -94,26 +106,6 @@ class Info extends Component {
                   </button>
                   <Picture />
                 </div>
-              ) : (
-                <span></span>
-              )}
-            </div>
-
-            <div className={oasis.musicPop}>
-              {isMusicPlay ? (
-                <Draggable>
-                  <div>
-                    <button
-                      className={oasis.closeButton}
-                      onClick={() => {
-                        this.setState({ musicThere: false });
-                      }}
-                    >
-                      x
-                    </button>
-                    <Player />
-                  </div>
-                </Draggable>
               ) : (
                 <span></span>
               )}
