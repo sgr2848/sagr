@@ -18,7 +18,7 @@ class Blogs extends Component {
     );
   }
 }
-export default Blogs;
+
 function Rust() {
   var Type =
     `pub enum Type{
@@ -361,3 +361,4 @@ function Cipher() {
     </div>
   );
 }
+export default Blogs;

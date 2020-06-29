@@ -1,31 +1,37 @@
 .closeButton {
   z-index: 3000;
   position: relative;
-  /* top:12%; */
-  left: 92%;
+  cursor: pointer;
 
+  /* top:12%; */
+  width:10%;
+  left: 1%;
+  background-color: inherit;
   right: 100%;
   border-radius: 10%;
 }
 .mainList {
-	background-color: inherit;
-	color:black;
-  top: 50%;
-  position: relative;
+  background-color: inherit;
+  color: black;
+  /* top: 50%; */
+  position: absolute;
   display: grid;
-  padding: 10px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  padding: 20px;
   height: 30px;
-  width: auto;
+  width: inherit;
+  align-items: center;
   text-align: center;
   grid-template-columns: auto auto auto auto;
   margin-top: 10px;
   gap: 40px;
   z-index: 3000;
-
 }
 
 .draw_border {
-		background-color: inherit;
+  background-color: inherit;
   box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
     -2px -2px 16px 0 rgba(255, 255, 255, 0.2);
   -moz-box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2),
@@ -38,7 +44,7 @@
   position: relative;
   /* padding: 2.3rem; */
   overflow: hidden;
-  border-radius:10px;
+  border-radius: 10px;
   z-index: 3000;
 }
 
@@ -68,21 +74,31 @@
   width: 95vw;
 }
 .Picture {
+  display: flex;
   max-width: 100vw;
   max-height: 100vh;
-  top: -135%;
+  top: 2%;
+  left: 2%;
+  position: absolute;
+  z-index: 50000;
+}
+.blogMain{
+  /* display: flex; */
+  max-width: 100vw;
+  max-height: 100vh;
+  top: 1%;
   left: 2%;
   position: absolute;
   z-index: 50000;
 }
 .musicPop {
   position: absolute;
-  top:2px;
+  top: 60vh;
   padding-left: 75%;
   width: 320px;
   border-bottom-left-radius: 20%;
   border-bottom-right-radius: 20%;
-  border-top-left-radius: 10%;
+  /* border-top-left-radius: 10%; */
 
   z-index: 10000000;
 }

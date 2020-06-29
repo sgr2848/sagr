@@ -3,7 +3,7 @@
   width: inherit;
 }
 .title {
-  top: 1vh;
+  top: 3vh;
   float: center;
   padding-left: 20%;
   position: relative;
@@ -51,6 +51,11 @@
   white-space: nowrap;
 }
 .wrapper {
+  display:block;
+  top: 1px;
+  width: max;
+
+  align-items: center;
   position: relative;
 }
 @keyframes typing {

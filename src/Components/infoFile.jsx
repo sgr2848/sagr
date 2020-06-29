@@ -12,6 +12,7 @@ class Info extends Component {
     api_res: "",
     musicThere: false,
     picturePreview: false,
+    blogThere:false,
   };
   constructor(props) {
     super(props);
@@ -27,41 +28,11 @@ class Info extends Component {
   //   this.call_backend();
   // }
   render() {
-        const isMusicPlay = this.state.musicThere;
+    const isMusicPlay = this.state.musicThere;
+    const isBlogThere = this.state.blogThere;
         const isPicture = this.state.picturePreview;
     return (
       <div className={classes.info}>
-        <div className={oasis.musicPop}>
-          {isMusicPlay ? (
-            <Draggable>
-              <div>
-                <button
-                  className={oasis.closeButton}
-                  onClick={() => {
-                    this.setState({ musicThere: false });
-                  }}
-                >
-                  x
-                </button>
-                <Player />
-              </div>
-            </Draggable>
-          ) : (
-            <span></span>
-          )}
-        </div>
-        <h1 className={classes.title}>
-          <ul className={classes.list}>
-            <li>Hello I'm Sagar</li>
-            <li> म सागर।</li>
-            <li>さがら です</li>
-          </ul>
-        </h1>
-        <p className={classes.para}>
-          I am currently a student at CUNY. I like doing stuff like this making
-          music and drinking coffee.
-        </p>
-        <p className={classes.newpara}>Here are some of my work</p>
         <div className={classes.wrapper}>
           <div>
             <div className={oasis.mainList}>
@@ -89,31 +60,90 @@ class Info extends Component {
                 Pictures I took
               </button>
 
-              <button className={oasis.draw_border}>Writings & Blogs</button>
-            </div>
-            <div className={oasis.Picture}>
-              {isPicture ? (
-                <div className={oasis.picture}>
-                  <button
-                    className={oasis.closeButton}
-                    onClick={() => {
-                      this.setState({
-                        picturePreview: false,
-                      });
-                    }}
-                  >
-                    x
-                  </button>
-                  <Picture />
-                </div>
-              ) : (
-                <span></span>
-              )}
+              <button
+                className={oasis.draw_border}
+                onClick={() => {
+                  this.setState({
+                    blogThere: true,
+                  });
+                }}
+              >
+                Writings & Blogs
+              </button>
             </div>
           </div>
         </div>
+        <div className={oasis.musicPop}>
+          {isMusicPlay ? (
+            <Draggable>
+              <div>
+                <button
+                  className={oasis.closeButton}
+                  onClick={() => {
+                    this.setState({ musicThere: false });
+                  }}
+                >
+                  x
+                </button>
+                <Player />
+              </div>
+            </Draggable>
+          ) : (
+            <span></span>
+          )}
+        </div>
+        <div className={oasis.Picture}>
+          {isPicture ? (
+            <div className={oasis.picture}>
+              <button
+                className={oasis.closeButton}
+                onClick={() => {
+                  this.setState({
+                    picturePreview: false,
+                  });
+                }}
+              >
+                x
+              </button>
+              <Picture/>
+            </div>
+          ) : (
+            <span></span>
+          )}
+        </div>
 
-        <p>{this.state.api_res}</p>
+        <div className={oasis.blogMain}>
+          {isBlogThere ? (
+            <div className={oasis.blog}>
+              <button
+                className={oasis.closeButton}
+                onClick={() => {
+                  this.setState({
+                    blogThere: false,
+                  });
+                }}
+              >
+                x
+              </button>
+              <Blogs />
+            </div>
+          ) : (
+            <span></span>
+          )}
+        </div>
+
+        <h1 className={classes.title}>
+          <ul className={classes.list}>
+            <li>Hello I'm Sagar</li>
+            <li> म सागर।</li>
+            <li>さがら です</li>
+          </ul>
+        </h1>
+        <p className={classes.para}>
+          I am currently a student at CUNY. I like doing stuff like this making
+          music and drinking coffee.
+        </p>
+        <p className={classes.newpara}>Here are some of my work</p>
       </div>
     );
   }

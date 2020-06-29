@@ -1,11 +1,12 @@
 .main {
-  background: linear-gradient(180deg, black, white);
-  border-radius: 10%;
-  /* padding: 0px; */
+  border-radius: 1%;
+  padding: 2px;
+  height: 90vh;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-auto-rows: 100px 300px;
-  grid-gap: 2px;
+  grid-auto-rows: 350px 350px;
+  gap: 3px;
+  overflow: scroll;
 }
 .body {
   /* margin:20px; */

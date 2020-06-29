@@ -1,6 +1,7 @@
 .articleDiv {
   position: relative;
   background: white;
+
   padding: 10px 10px 10px 10px;
   border-radius: 2%;
   box-shadow: 10px 10px 5px grey;
@@ -33,6 +34,8 @@
   display: grid;
   row-gap: 15px;
   border-radius: 2%;
+    overflow:scroll;
+  height: 90vh;
 }
 .date {
   line-height: 0.5;

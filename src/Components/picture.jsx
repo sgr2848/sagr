@@ -23,13 +23,11 @@ class Picture extends Component {
               <img
                 className={classes.imageSpan}
                 src={item}
-                
                 onClick={() => {
                   this.setState({
                     fullscreen: true,
                     fullScreenImage: item,
                   });
-                
                 }}
               ></img>
             </div>
@@ -51,10 +49,7 @@ class Picture extends Component {
                     fullScreenImage: null,
                   });
                 }}
-                            style={{
-
-                
-                }}
+                style={{}}
               >
                 Close
               </button>
