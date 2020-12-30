@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import classes from "./css/main.module.css";
-import Blogs from "./blogs";
+
 import Player from "./songPlayer";
 import Draggable from "react-draggable";
 import Picture from "./picture";
+import Projects from "./projects";
 import oasis from "./css/table.module.css";
 
 class Info extends Component {
@@ -12,7 +13,7 @@ class Info extends Component {
     api_res: "",
     musicThere: false,
     picturePreview: false,
-    blogThere:false,
+    projectThere: false,
   };
   constructor(props) {
     super(props);
@@ -29,14 +30,21 @@ class Info extends Component {
   // }
   render() {
     const isMusicPlay = this.state.musicThere;
-    const isBlogThere = this.state.blogThere;
-        const isPicture = this.state.picturePreview;
+
+    const isPicture = this.state.picturePreview;
     return (
       <div className={classes.info}>
         <div className={classes.wrapper}>
           <div>
             <div className={oasis.mainList}>
-              <button className={oasis.draw_border}>Projects</button>
+              <button
+                className={oasis.draw_border}
+                onClick={() => {
+                  this.setState({
+                    projectThere: true,
+                  });
+                }}
+              >Projects</button>
 
               <button
                 className={oasis.draw_border}
@@ -60,16 +68,6 @@ class Info extends Component {
                 Pictures I took
               </button>
 
-              <button
-                className={oasis.draw_border}
-                onClick={() => {
-                  this.setState({
-                    blogThere: true,
-                  });
-                }}
-              >
-                Writings & Blogs
-              </button>
             </div>
           </div>
         </div>
@@ -89,8 +87,8 @@ class Info extends Component {
               </div>
             </Draggable>
           ) : (
-            <span></span>
-          )}
+              <span></span>
+            )}
         </div>
         <div className={oasis.Picture}>
           {isPicture ? (
@@ -105,31 +103,11 @@ class Info extends Component {
               >
                 x
               </button>
-              <Picture/>
+              <Picture />
             </div>
           ) : (
-            <span></span>
-          )}
-        </div>
-
-        <div className={oasis.blogMain}>
-          {isBlogThere ? (
-            <div className={oasis.blog}>
-              <button
-                className={oasis.closeButton}
-                onClick={() => {
-                  this.setState({
-                    blogThere: false,
-                  });
-                }}
-              >
-                x
-              </button>
-              <Blogs />
-            </div>
-          ) : (
-            <span></span>
-          )}
+              <span></span>
+            )}
         </div>
 
         <h1 className={classes.title}>

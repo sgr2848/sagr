@@ -39,7 +39,7 @@ class Player extends React.Component {
   }
 
   componentWillUnmount() {
-    this.player.removeEventListener("timeupdate", () => {});
+    this.player.removeEventListener("timeupdate", () => { });
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -139,14 +139,14 @@ class Player extends React.Component {
           &#128266;  {item.title}
         </li>
       ) : (
-        <li
-          className={classes.listName}
-          key={item.id}
-          onClick={() => this.setState({ selectedTrack: item.title })}
-        >
-          {item.title}
-        </li>
-      );
+          <li
+            className={classes.listName}
+            key={item.id}
+            onClick={() => this.setState({ selectedTrack: item.title })}
+          >
+            {item.title}
+          </li>
+        );
     });
 
     const currentTime = getTime(this.state.currentTime);
@@ -256,8 +256,8 @@ function TimeBar({ currentTime, duration, setTime }) {
           <text className={classes.elapsedTime}>{formattedCurrentTime}</text>
         </text>
       ) : (
-        ""
-      )}
+          ""
+        )}
       <div className={classes.ntimebar}>
         {seconds}
         {currentTime ? (
@@ -265,8 +265,8 @@ function TimeBar({ currentTime, duration, setTime }) {
             <text className={classes.totalTime}>{formattedDuration}</text>
           </text>
         ) : (
-          ""
-        )}
+            ""
+          )}
       </div>
     </div>
   );

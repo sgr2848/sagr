@@ -33,7 +33,7 @@
   position: relative;
   list-style: none;
   margin-top: 0;
-  animation: introchange 15s infinite;
+  animation: introchange 60s infinite;
 }
 .newpara {
   top: 0.5vh;
