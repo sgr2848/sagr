@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sagr/static/css/main.8a3137c7.chunk.css",
-    "main.js": "/sagr/static/js/main.32f55111.chunk.js",
-    "main.js.map": "/sagr/static/js/main.32f55111.chunk.js.map",
+    "main.js": "/sagr/static/js/main.63a9265c.chunk.js",
+    "main.js.map": "/sagr/static/js/main.63a9265c.chunk.js.map",
     "runtime-main.js": "/sagr/static/js/runtime-main.407f81b0.js",
     "runtime-main.js.map": "/sagr/static/js/runtime-main.407f81b0.js.map",
     "static/js/2.16c8045c.chunk.js": "/sagr/static/js/2.16c8045c.chunk.js",
     "static/js/2.16c8045c.chunk.js.map": "/sagr/static/js/2.16c8045c.chunk.js.map",
     "index.html": "/sagr/index.html",
-    "precache-manifest.fd074709799324fe2809e7890e9891d5.js": "/sagr/precache-manifest.fd074709799324fe2809e7890e9891d5.js",
+    "precache-manifest.f91610bcec7d2c931a467b5ab852ecb9.js": "/sagr/precache-manifest.f91610bcec7d2c931a467b5ab852ecb9.js",
     "service-worker.js": "/sagr/service-worker.js",
     "static/css/main.8a3137c7.chunk.css.map": "/sagr/static/css/main.8a3137c7.chunk.css.map",
     "static/js/2.16c8045c.chunk.js.LICENSE.txt": "/sagr/static/js/2.16c8045c.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.407f81b0.js",
     "static/js/2.16c8045c.chunk.js",
     "static/css/main.8a3137c7.chunk.css",
-    "static/js/main.32f55111.chunk.js"
+    "static/js/main.63a9265c.chunk.js"
   ]
 }
