@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "816bda789fc65c8023f063edb4923d27",
+    "revision": "c395584aea53065096c0f6889737b5d6",
     "url": "/sagr/index.html"
   },
   {
-    "revision": "9622de31e37d3e6f1ad4",
-    "url": "/sagr/static/css/main.8a3137c7.chunk.css"
+    "revision": "76cbf52ee76d0c8da200",
+    "url": "/sagr/static/css/main.50bf264a.chunk.css"
   },
   {
     "revision": "ff70de8d6a814b969717",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sagr/static/js/2.16c8045c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9622de31e37d3e6f1ad4",
-    "url": "/sagr/static/js/main.63a9265c.chunk.js"
+    "revision": "76cbf52ee76d0c8da200",
+    "url": "/sagr/static/js/main.6ddaebe5.chunk.js"
   },
   {
     "revision": "2e2c39614147a9080739",
