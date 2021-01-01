@@ -7,9 +7,7 @@ class App extends Component{
     return (
       <div className={classes.app}>
         <Start/>
-        {/* <Player/> */}
-        {/* <Blogs/> */}
-        {/* <Projects/> */}
+
       </div>
     );
   }

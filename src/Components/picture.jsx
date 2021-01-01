@@ -4,7 +4,7 @@ import classes from "./css/image.module.css";
 const picture_list = () => {
   let picture_array = [];
   for (var i = 1; i < 17; i++) {
-    picture_array.push(`pictures/${i}.jpg`);
+    picture_array.push(`pictures/${i}-min.jpg`);
     console.log();
   }
   return picture_array;
@@ -57,8 +57,8 @@ class Picture extends Component {
               <div className={classes.imgbg}></div>
             </div>
           ) : (
-            <span></span>
-          )}
+              <span></span>
+            )}
         </div>
       </div>
     );

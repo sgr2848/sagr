@@ -5,6 +5,11 @@ const idle = "musics/i_six.mp3";
 const shin = "musics/shin(henka).mp3";
 const crystal = "musics/Crystalize.mp3";
 const pheri = "musics/Pheri.mp3";
+const a_jig = "musics/a_jig.mp3";
+const khoi = "musics/khoi.mp3";
+const llvm = "musics/llvm.mp3";
+const oval = "musics/oval.mp3";
+const eol = "musics/eol.mp3";
 
 function getTime(time) {
   if (!isNaN(time)) {
@@ -15,10 +20,16 @@ function getTime(time) {
 }
 
 const TRACKS = [
-  { id: 1, title: "Pheri" },
-  { id: 2, title: "shin" },
-  { id: 3, title: "Crystalize" },
-  { id: 4, title: "i_six" },
+  { id: 1, title: "a jig" },
+  { id: 2, title: "खोइ" },
+  { id: 3, title: "फेरी" },
+  { id: 4, title: "shin" },
+  { id: 5, title: "Crystalize" },
+  { id: 6, title: "i_six" },
+  { id: 7, title: "LLVM" },
+  { id: 8, title: "E>O>L" },
+  { id: 9, title: "mornings" },
+
 ];
 
 class Player extends React.Component {
@@ -49,14 +60,29 @@ class Player extends React.Component {
         case "i_six":
           track = idle;
           break;
+        case "खोइ":
+          track = khoi;
+          break;
         case "shin":
           track = shin;
           break;
         case "Crystalize":
           track = crystal;
           break;
-        case "Pheri":
+        case "फेरी":
           track = pheri;
+          break;
+        case "a jig":
+          track = a_jig;
+          break;
+        case "LLVM":
+          track = llvm;
+          break;
+        case "E>O>L":
+          track = eol;
+          break;
+        case "mornings":
+          track = oval;
           break;
         default:
           break;
@@ -163,7 +189,7 @@ class Player extends React.Component {
               fontFamily: "Inconsolata",
             }}
           >
-            List
+            Music Lists
           </h2>
           <ul className={classes.trackList}>{list}</ul>
           <TimeBar

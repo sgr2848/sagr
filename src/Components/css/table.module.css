@@ -84,6 +84,30 @@
   position: absolute;
   z-index: 50000;
 }
+.Proj{
+  display: flex;
+  max-width: 100vw;
+  max-height: 100vh;
+  top: 2%;
+  left: 2%;
+  position: absolute;
+  z-index: 50000;
+ animation:alert-success 0.5s 1;
+    -webkit-animation:alert-success 0.5s 1;
+    animation-fill-mode: forwards;
+
+    animation-delay:2s;
+    -webkit-animation-delay:1s; /* Safari and Chrome */
+    -webkit-animation-fill-mode: forwards;
+
+} 
+
+@keyframes alert-success{
+    0%   {opacity: 1;}
+    70%  {opacity: 1;}
+    90% {opacity: 1;-webkit-transform: translateY(0px);}
+    100% {opacity: 0;-webkit-transform: translateY(-30px);}
+}
 .blogMain{
   /* display: flex; */
   max-width: 100vw;

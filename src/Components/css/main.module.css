@@ -15,12 +15,20 @@
   height: 15vh;
   overflow: hidden;
 }
+.pictureI{
+   top: 1vh;
+   float: right;
+   padding-left: 65%;
+   position:absolute;
+}
 .para {
   top:0.5vh;
-  padding-left: 20%;
+  padding-left: 5%;
   position: relative;
+  max-width: 90%;
+  max-height: 20%;
   font-family: "Inconsolata", serif;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: black;
   z-index: 1000;
   margin: 0 auto;
@@ -35,20 +43,29 @@
   margin-top: 0;
   animation: introchange 60s infinite;
 }
-.newpara {
-  top: 0.5vh;
-  padding-left: 20%;
+
+.new_para{
+  top: 2.5vh;
+  padding-left: 10%;
   position: relative;
   font-family: "Inconsolata", serif;
-  font-size: 3vh;
+  font-size: 2.5vh;
   color: black;
-
   z-index: 1000;
   margin: 0 auto;
   border-right: 0.15em solid black;
   overflow: hidden;
-  animation: typing 10.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: fadein 12s ease ;
   white-space: nowrap;
+}
+.exp{
+  position: relative;
+  list-style: none;
+}
+@keyframes fadein{
+  0% { opacity: 0;}
+  
+  100% { opacity:1;}
 }
 .wrapper {
   display:block;
@@ -58,6 +75,28 @@
   align-items: center;
   position: relative;
 }
+.list_f{
+  padding-left: 20;
+  float:left;  
+  border-spacing: 20px;
+
+}
+.list_f{
+  padding-left: 20;
+  float:left;  
+  border-spacing: 20px;
+}
+
+.list_f ul{
+  border-right:0.15em solid white;
+  border-bottom:0.15em solid white;
+  border-bottom-right-radius: 10%;
+  list-style: none;
+  padding-top: 10;
+  
+
+}
+
 @keyframes typing {
   from {
     width: 0;
