@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/sagr/static/css/main.25af8a8c.chunk.css",
-    "main.js": "/sagr/static/js/main.1fa442b7.chunk.js",
-    "main.js.map": "/sagr/static/js/main.1fa442b7.chunk.js.map",
+    "main.js": "/sagr/static/js/main.26cfbc09.chunk.js",
+    "main.js.map": "/sagr/static/js/main.26cfbc09.chunk.js.map",
     "runtime-main.js": "/sagr/static/js/runtime-main.407f81b0.js",
     "runtime-main.js.map": "/sagr/static/js/runtime-main.407f81b0.js.map",
     "static/css/2.f4bde6ca.chunk.css": "/sagr/static/css/2.f4bde6ca.chunk.css",
     "static/js/2.edd1c823.chunk.js": "/sagr/static/js/2.edd1c823.chunk.js",
     "static/js/2.edd1c823.chunk.js.map": "/sagr/static/js/2.edd1c823.chunk.js.map",
     "index.html": "/sagr/index.html",
-    "precache-manifest.60eecb72ddcd2513f1442d407b7862d9.js": "/sagr/precache-manifest.60eecb72ddcd2513f1442d407b7862d9.js",
+    "precache-manifest.8065f708cc35e01123e67c103a182ce5.js": "/sagr/precache-manifest.8065f708cc35e01123e67c103a182ce5.js",
     "service-worker.js": "/sagr/service-worker.js",
     "static/css/2.f4bde6ca.chunk.css.map": "/sagr/static/css/2.f4bde6ca.chunk.css.map",
     "static/css/main.25af8a8c.chunk.css.map": "/sagr/static/css/main.25af8a8c.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.f4bde6ca.chunk.css",
     "static/js/2.edd1c823.chunk.js",
     "static/css/main.25af8a8c.chunk.css",
-    "static/js/main.1fa442b7.chunk.js"
+    "static/js/main.26cfbc09.chunk.js"
   ]
 }
